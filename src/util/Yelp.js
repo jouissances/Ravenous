@@ -25,7 +25,7 @@ const Yelp = {
             })}).then(response => response.json())
             .then(jsonResponse => {
                 if (jsonResponse.businesses) {
-                console.log('Go to businesses');
+                console.log('Checkpoint: Loading businesses');
                    return jsonResponse.businesses.map(business => {
                        return {
                            id: business.id,
